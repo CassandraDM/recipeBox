@@ -1,0 +1,40 @@
+body {
+    background-color:rgb(205, 215, 245) !important;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(5,15,55);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    .disconnect {
+        all:unset;
+        color: white;
+        cursor: pointer;
+    }
+
+}
+
+.recipe-list {
+    display: flex;
+    justify-content: center;
+    width:100%;
+    gap: 20px;
+}
+
+.recipe {
+    width: 600px;
+    background-color:rgb(135,165,255);
+    padding: 20px;
+    border-radius: 8px;
+
+    img{
+        width: 100%;
+    }
+
+    li {
+        font-size: medium;
+    }
+}
