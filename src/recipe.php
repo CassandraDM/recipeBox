@@ -42,7 +42,14 @@
 
 <div class="recipe">
     <div>
-        <h1><?php echo htmlspecialchars($recipes['title']); ?></h1>
+        <div class="recipe-header">        
+            <h1><?php echo htmlspecialchars($recipes['title']); ?></h1>
+            <div class="actions-container">
+                <a class="action" href="scripts/delete-recipe-script.php?id=<?php echo htmlspecialchars($recipes["id"]) ?>">
+                    <i class="fa-solid fa-trash-can" ></i>
+                </a>
+            </div>
+        </div>
         <div>
             <ul>
                 <?php $recipes['ingredients'] = explode(";",$recipes['ingredients']) ?>

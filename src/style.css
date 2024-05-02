@@ -19,9 +19,16 @@ nav {
 
 .recipe-list {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width:100%;
     gap: 20px;
+}
+
+.recipe-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .recipe {
@@ -36,5 +43,20 @@ nav {
 
     li {
         font-size: medium;
+    }
+}
+
+.action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(100, 125, 215);
+    border-radius: 4px;
+    width: 30px;
+    height: 30px;
+
+    i {
+        color: white;
+        font-size: 16px;
     }
 }
