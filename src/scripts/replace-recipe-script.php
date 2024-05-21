@@ -11,7 +11,7 @@
     $request->bindParam(':image', $img_recipe);
     $request->bindParam(':ingredients', $ingredients_recipe);
     $request->bindParam(':steps', $steps_recipe);
-    $request->bindParam(':id', $_GET['id']);
+    $request->bindParam(':id', $_POST['id']);
     $request->execute();
 
     header('Location: ../recipe.php');
