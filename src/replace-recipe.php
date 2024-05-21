@@ -31,6 +31,7 @@
             <textarea class="form-control" placeholder="Steps 1; steps 2; ..." name="steps"><?php echo $recipe['steps']; ?></textarea>
         </div>
         <div >        
+            <input type="hidden" name="id" value="<?php echo $recipe['id']; ?>">
             <input type="submit" value="Update" class="btn btn-primary w-100">
         </div>
     </form>
