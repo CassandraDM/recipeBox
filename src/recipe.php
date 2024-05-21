@@ -53,6 +53,9 @@
                     </a>
                     <a class="action" href="replace-recipe.php?id=<?php echo htmlspecialchars($recipes["id"]) ?>">
                         <i class="fa-solid fa-pen-to-square" ></i>
+                  </a>
+                    <a class="action" href="scripts/duplicate-recipe-script.php?id=<?php echo htmlspecialchars($recipes["id"]) ?>">
+                        <i class="fa-solid fa-clone" ></i>
                     </a>
                 </div>
             </div>
