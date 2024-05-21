@@ -16,6 +16,9 @@
 <body>
     <?php if(isset($_SESSION['id'])) : ?>
         <nav class="text-center p-3">
-            <a href="scripts/signout-script.php" class="disconnect">DISCONNECT</a>   
+            <a href="scripts/signout-script.php" class="nav-action">DISCONNECT</a>   
+            <?php if(basename($_SERVER['PHP_SELF']) == 'create-recipe.php'): ?>
+                <a href="index.php" class="nav-action">HOME</a>
+            <?php endif; ?>
         </nav>
     <?php endif ?>
