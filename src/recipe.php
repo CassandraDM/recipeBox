@@ -22,7 +22,7 @@
     <?php
         $connectDatabase = new PDO("mysql:host=db;dbname=recipeBox","root", "admin");
         // prepare request
-        $request = $connectDatabase->prepare("SELECT * FROM recipes WHERE user_id = :user_id");
+        $request = $connectDatabase->prepare("SELECT * FROM recipes WHERE user_id = :user_id ORDER BY created_at DESC");
         $request->bindParam(':user_id', $_SESSION['id']);
         // execute request
         $request->execute();
